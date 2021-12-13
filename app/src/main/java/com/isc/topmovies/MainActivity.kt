@@ -1,5 +1,6 @@
 package com.isc.topmovies
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.firebase.auth.FirebaseAuth
@@ -18,8 +19,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         // Initialize Firebase Auth
         auth = Firebase.auth
+        signOut()
+    }
 
-
+    private fun signOut(){
+        Firebase.auth.signOut()
+        val intent = Intent(this, SingInActivity::class.java)
+        startActivity(intent)
     }
 
 

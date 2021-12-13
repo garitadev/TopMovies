@@ -34,7 +34,11 @@ class SingInActivity : AppCompatActivity() {
                     SignIn(mEmail, mPassword)
                 }
             }
-
+        }
+        //Le asignamos una accion al texto de signup
+        binding.signUpTextView.setOnClickListener{
+            val intent = Intent(this,SignUpActivity::class.java)
+            startActivity(intent)
 
         }
     }
@@ -67,5 +71,7 @@ class SingInActivity : AppCompatActivity() {
         val intent = Intent(this, MainActivity::class.java)
         this.startActivity(intent)
     }
+
+
 
 }
