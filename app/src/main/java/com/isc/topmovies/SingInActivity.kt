@@ -41,6 +41,12 @@ class SingInActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
+        //Asignamos un oyente de acción al texto de olvidaste contraseñasa para que redirija a la pantalla de recuperacion
+        binding.recoveryAccountTextView.setOnClickListener{
+            val intent = Intent(this,CambiarPasswordActivity::class.java)
+            startActivity(intent)
+
+        }
     }
     //Para que una vez se logue un usuario no tenga que volver a hacerlo
     public override fun onStart() {
