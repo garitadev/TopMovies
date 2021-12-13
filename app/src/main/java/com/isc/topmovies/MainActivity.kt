@@ -15,11 +15,17 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //Se inicializan las variables
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         // Initialize Firebase Auth
         auth = Firebase.auth
-        signOut()
+
+        binding.button.setOnClickListener {
+            signOut()
+        }
+
+
     }
 
     private fun signOut(){

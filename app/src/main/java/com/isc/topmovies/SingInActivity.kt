@@ -48,7 +48,15 @@ class SingInActivity : AppCompatActivity() {
         // Check if user is signed in (non-null) and update UI accordingly.
         val currentUser = auth.currentUser
         if(currentUser != null){
-            reload();
+            //Validaciones para que no se puedar entrar a la app sin verificar el correo
+            if (currentUser.isEmailVerified){
+                reload()
+
+            }else{
+                val intent = Intent(this,EmailAuthActivity::class.java)
+                startActivity(intent)
+
+            }
         }
     }
 
