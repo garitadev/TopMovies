@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "151748866209",
+    "project_id": "programovil-9d2bb",
+    "storage_bucket": "programovil-9d2bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151748866209:android:74a71f3823574b2046c0e0",
+        "android_client_info": {
+          "package_name": "com.isc.topmovies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "151748866209-lphe5j6ar8hrfe5c41iqd7fj6g3i7uus.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_PNeY_Lp8PmNzBD_OCsCivvyxmaltFqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "151748866209-lphe5j6ar8hrfe5c41iqd7fj6g3i7uus.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
